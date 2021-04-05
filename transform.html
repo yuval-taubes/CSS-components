@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>External CSS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <link rel="stylesheet" type="text/css" href="css-pages-style.css" />
+
+    <style>
+        .parent {
+            height: 300px;
+            width: 600px;
+            padding: 0 1em;
+            margin: 1em;
+            border: 1px solid red;
+        }
+
+        .child {
+            font-size: 1.2rem;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        .box {
+            width: 10rem;
+            background-color: orange;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 1rem;
+            position: relative;
+        }
+
+        .box::before {
+            content: '';
+            width: 1rem;
+            height: 1rem;
+            background-color: orange;
+            overflow: hidden;
+            position: absolute;
+            right: -0.5rem;
+            top: 50%;
+            transform: rotate(45deg);
+            margin-top: -0.5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Credit to https://www.sitepoint.com/css-transforms-real-world/-->
+    <main>
+        <h1>External CSS</h1>
+        <p>This page shows the effect of External CSS</p>
+
+        <div class="parent">
+            <div class="child">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            </div>
+        </div>
+
+        <div class="parent">
+            <div class="child">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam
+            </div>
+        </div>
+    </main>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inline CSS</a>
+            </li>
+            <li>
+                <a href="internal-css.html">Internal CSS</a>
+            </li>
+            <li>
+                <a href="external-css.html">external CSS</a>
+            </li>
+            <li>
+                <a href="testing-cascading.html">testing-cascading</a>
+            </li>
+            <li>
+                <a href="classes-and-ids.html">classes-and-ids</a>
+            </li>
+            <li>
+                <a href="backgrounds-and-text.html">background-and-text</a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
