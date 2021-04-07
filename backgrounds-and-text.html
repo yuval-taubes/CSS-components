@@ -6,7 +6,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <style>
-
         h1 {
             color: green;
             text-align: center;
@@ -18,25 +17,64 @@
             color: green;
             font-size: 20;
         }
+
         div {
             color: green;
             font-weight: bold;
             background-color: wheat;
         }
-        a:hover, a:focus{
+
+        a:hover,
+        a:focus {
             color: darkgray;
             background-color: black;
         }
-        a:visited{
+
+        a:visited {
             color: blueviolet;
         }
 
-        body{
-        background-image: url('images/background\ image.jpg');
-        background-size: width = 100vh;
+        body {
+            background-image: url('images/background\ image.jpg');
+            background-size: width=100vh;
         }
-        nav{
-            background-color: wheat; 
+
+        nav {
+            background-color: wheat;
+        }
+
+        li:hover {
+            transform:translateY(20px);
+            transform: scale(1.1);
+        }
+
+        li {
+            display: inline-block;
+            transition: transform 1s;
+            padding: 5px;
+            margin: 4px;
+            margin-bottom: 15;
+            font-size: medium;
+        }
+
+        .maincontent {
+            color: green;
+            font-weight: bold;
+            background-color: wheat;
+
+        }
+
+        main {
+            opacity: 0;
+            animation-duration: 1s;
+            animation-name: opacityanim;
+            animation-delay: 1.2s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes opacityanim{
+            from{opacity: 0;}
+            to{opacity: 1;}
         }
     </style>
 </head>
@@ -46,40 +84,41 @@
     <h1>background and text</h1>
     <p>This page shows the effect of styling</p>
 
-    <div>
-        <p>
-            this a website
-        </p>
-        <p>
-            this a website
-        </p>
-        <p>
-            this a website
-        </p>
-    </div>
+    <main>
+            <p>
+                this a website
+            </p>
+            <p>
+                this a website
+            </p>
+            <p>
+                this a website
+            </p>
+        </div>
+        <main>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Inline CSS</a> 
-            </li>
-            <li>
-                <a href="internal-css.html">Internal</a>
-            </li>
-            <li>
-                <a href="external-css.html">external</a>
-            </li>
-            <li>
-                <a href="testing-cascading.html">testing-cascading</a>
-            </li>
-            <li>
-                <a href="classes-and-ids.html">classes-and-ids</a>
-            </li>
-            <li>
-                <a href="backgrounds-and-text.html">background-and-text</a>
-            </li>
-        </ul>
-    </nav>
+       
+                <ul>
+                    <li>
+                        <a href="index.html">Inline CSS </a>
+                    </li></br>
+                    <li>
+                        <a href="internal-css.html">Internal</a>
+                    </li></br>
+                    <li>
+                        <a href="external-css.html">external</a>
+                    </li></br>
+                    <li>
+                        <a href="testing-cascading.html">testing-cascading</a>
+                    </li></br>
+                    <li>
+                        <a href="classes-and-ids.html">classes-and-ids</a>
+                    </li></br>
+                    <li>
+                        <a href="backgrounds-and-text.html">background-and-text</a>
+                    </li>
+                </ul>
+          
 
 </body>
 
