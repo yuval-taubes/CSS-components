@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>floating-and-positioning</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <style>
+        h1 {
+            color: green;
+            text-align: center;
+            font-size: 40px;
+            background-color: wheat;
+        }
+
+        p {
+            color: green;
+            font-size: 20;
+        }
+
+        div {
+            color: green;
+            font-weight: bold;
+            background-color: wheat;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        a:hover,
+        a:focus {
+            color: darkgray;
+            background-color: black;
+        }
+
+        a:visited {
+ 
+        }
+
+        body {
+            background-image: url('images/background\ image.jpg');
+            background-size: width=100vh;
+        }
+
+        nav {
+            background-color: whitesmoke;
+            margin: 0px;
+            padding: 8px;
+            resize: both;
+            overflow: auto;
+            width: calc(100% - 16px);
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li {
+            display: inline-block;
+            float: left;
+        }
+
+        nav a {
+            padding: 5px;
+            margin: 4px;
+            border-color: black;
+            border-style:solid;
+            color: #2a2a2a;
+        }
+
+        li:hover {
+            transform: translateY(20px);
+            transform: scale(1.1);
+        }
+
+        li {
+
+        }
+
+        .maincontent {
+            color: green;
+            font-weight: bold;
+            background-color: wheat;
+
+        }
+
+        main {
+            opacity: 0;
+            animation-duration: 1s;
+            animation-name: opacityanim;
+            animation-delay: 1.2s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes opacityanim {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+        #relative{
+            position: relative;
+        }
+        #absolute{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inline CSS </a>
+            </li>
+            <li>
+                <a href="internal-css.html">Internal</a>
+            </li>
+            <li>
+                <a href="external-css.html">external</a>
+            </li>
+            <li>
+                <a href="testing-cascading.html">testing-cascading</a>
+            </li>
+            <li>
+                <a href="classes-and-ids.html">classes-and-ids</a>
+            </li>
+            <li>
+                <a href="backgrounds-and-text.html">background-and-text</a>
+            </li>
+        </ul>
+    </nav>
+    </br>
+
+    <h1>floating-and-positioning</h1>
+    <p>This page shows the effect of floating-and-positioning</p>
+
+    <main>
+        <div id = "relative">
+            
+            <p>
+                They argue. While the argument seems to be different the truth is it's always the same. Yes, the topic
+                may
+                be different or the circumstances,
+                but when all said and done, it all came back to the same thing. They both knew it, but neither has the
+                courage or strength to address the
+                underlying issue. So they continue to argue.
+                It was that terrifying feeling you have as you tightly hold the covers over you with the knowledge that
+                there is something hiding under your bed. You want to look, but you don't at the same time. You're
+                frozen with fear and unable to act. That's where she found herself and she didn't know what to do next
+            </p>
+
+            <p>
+                They argue. While the argument seems to be different the truth is it's always the same. Yes, the topic
+                may
+                be different or the circumstances,
+                but when all said and done, it all came back to the same thing. They both knew it, but neither has the
+                courage or strength to address the
+                underlying issue. So they continue to argue.
+                It was that terrifying feeling you have as you tightly hold the covers over you with the knowledge that
+                there is something hiding under your bed. You want to look, but you don't at the same time. You're
+                frozen with fear and unable to act. That's where she found herself and she didn't know what to do next
+
+            </p>
+
+            <p>
+                They argue. While the argument seems to be different the truth is it's always the same. Yes, the topic
+                may
+                be different or the circumstances,
+                but when all said and done, it all came back to the same thing. They both knew it, but neither has the
+                courage or strength to address the
+                underlying issue. So they continue to argue.
+                It was that terrifying feeling you have as you tightly hold the covers over you with the knowledge that
+                there is something hiding under your bed. You want to look, but you don't at the same time. You're
+                frozen with fear and unable to act. That's where she found herself and she didn't know what to do next
+            </p> 
+
+        </br>
+    </br>
+
+            <div id = "absolute">
+                <p>This is and absolute div</p>
+            </div>
+        
+        </div>
+        <main>
+
+
+
+
+
+</body>
+
+</html>
